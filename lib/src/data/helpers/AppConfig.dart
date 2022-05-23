@@ -1,3 +1,3 @@
 class AppConfig {
-  String urlbase = 'jsonplaceholder.typicode.com';
+  String urlbase = 'http://jsonplaceholder.typicode.com/';
 }

@@ -1,5 +1,7 @@
 import 'dart:convert';
 
+import 'package:users/src/domain/entities/post.dart';
+
 User userFromJson(String str) => User.fromJson(json.decode(str));
 String userToJson(User data) => json.encode(data.toJson());
 class User {
@@ -8,6 +10,7 @@ class User {
   String email;
   String phone;
   List<User> userList = [];
+  List<Post> postList = [];
 
   User({
     this.id = 0, 
